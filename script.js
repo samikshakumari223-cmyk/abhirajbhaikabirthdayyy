@@ -13,25 +13,25 @@ const FINALE_CAPTION = "Scan this QR to pay me for the party (just kidding 🤪)
 
 // Photos 1-14 for the background loop
 const BG_PHOTOS = [
-  "photos/1.jpg", "photos/2.jpg", "photos/3.jpg", "photos/4.jpg",
-  "photos/5.jpg", "photos/6.jpg", "photos/7.jpg", "photos/8.jpg",
-  "photos/9.jpg", "photos/10.jpg", "photos/11.jpg", "photos/12.jpg",
-  "photos/13.jpg", "photos/14.jpg",
+"1.jpg", "2.jpg", "3.jpg", "4.jpg",
+  "5.jpg", "6.jpg", "7.jpg", "8.jpg",
+  "9.jpg", "10.jpg", "11.jpg", "12.jpg",
+  "13.jpg", "14.jpg",
 ];
 
 // Photos 15+ for the slideshow
 const SLIDESHOW = [
-  { src: "photos/15.jpg", caption: "pehla hangout hi kehdeyy 🥰" },
-  { src: "photos/16.jpg", caption: "HAWTIEEEEE🫵🏽" },
-  { src: "photos/17.jpg", caption: "cutus" },
-  { src: "photos/18.jpg", caption: "this i couldnt resist to post🫰🏻" },
-  { src: "photos/19.jpg", caption: " love you rhega😘" },
-  { src: "photos/20.jpg", caption: "🔥🔥🔥🔥" },
-  { src: "photos/21.jpg", caption: "Forever grateful for you" },
-  { src: "photos/22.jpg", caption: "Cheers to mac n cheese supremacy😋" },
-  { src: "photos/23.jpg", caption: "kitti pyaar photo hai yawr" },
-  { src: "photos/24.jpg", caption: "ye toh bas teri jalane k liye daali hai😘" },
-  { src: "photos/25.jpg", caption: "Here's to the best chapter yet." },
+ { src: "15.jpg", caption: "pehla hangout hi kehdeyy 🥰" },
+  { src: "16.jpg", caption: "HAWTIEEEEE🫵🏽" },
+  { src: "17.jpg", caption: "cutus" },
+  { src: "18.jpg", caption: "this i couldnt resist to post🫰🏻" },
+  { src: "19.jpg", caption: " love you rhega😘" },
+  { src: "20.jpg", caption: "🔥🔥🔥🔥" },
+  { src: "21.jpg", caption: "Forever grateful for you" },
+  { src: "22.jpg", caption: "Cheers to mac n cheese supremacy😋" },
+  { src: "23.jpg", caption: "kitti pyaar photo hai yawr" },
+  { src: "24.jpg", caption: "ye toh bas teri jalane k liye daali hai😘" },
+  { src: "25.jpg", caption: "Here's to the best chapter yet." },
 ];
 
 /* ============================================
