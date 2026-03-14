@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- BACKGROUND PHOTO LOOP -->
+  <div id="bg-photos">
+    <div class="bg-photo" id="bg-photo-a"></div>
+    <div class="bg-photo" id="bg-photo-b"></div>
+  </div>
+  <div id="bg-overlay"></div>
+
+  <!-- SPLASH OVERLAY -->
+  <div id="splash">
+    <canvas id="confetti-canvas"></canvas>
+    <div class="balloons" id="balloons"></div>
+    <div class="splash-content">
+      <h1 class="splash-title">Happy 18th Birthday</h1>
+      <h1 class="splash-name" id="bday-name"></h1>
+      <p class="splash-emoji">🎂🎉🎈</p>
+      <p class="splash-question">Are you ready for the celebration?</p>
+      <div class="splash-buttons">
+        <button class="splash-btn" id="splash-continue">Yes</button>
+        <span class="splash-or">or</span>
+        <button class="splash-btn" id="splash-yes2">Yes</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCENE 1: CAKE & CANDLE -->
+  <section id="cake-section">
+    <h2 class="section-title" id="cake-title">Close your eyes and make a wish...</h2>
+    <div class="cake-container">
+      <div class="cake">
+        <div class="candles-row" id="candles-row">
+          <div class="candle">
+            <div class="flame-wrap"><div class="flame lit"><div class="flame-inner"></div></div><div class="smoke-wisp"></div></div>
+            <div class="candle-body" style="background: linear-gradient(to right, #FF6EB4, #C2185B, #FF6EB4);"></div>
+          </div>
+          <div class="candle">
+            <div class="flame-wrap"><div class="flame lit"><div class="flame-inner"></div></div><div class="smoke-wisp"></div></div>
+            <div class="candle-body"></div>
+          </div>
+          <div class="candle">
+            <div class="flame-wrap"><div class="flame lit"><div class="flame-inner"></div></div><div class="smoke-wisp"></div></div>
+            <div class="candle-body" style="background: linear-gradient(to right, #FF6EB4, #C2185B, #FF6EB4);"></div>
+          </div>
+          <div class="candle">
+            <div class="flame-wrap"><div class="flame lit"><div class="flame-inner"></div></div><div class="smoke-wisp"></div></div>
+            <div class="candle-body"></div>
+          </div>
+          <div class="candle">
+            <div class="flame-wrap"><div class="flame lit"><div class="flame-inner"></div></div><div class="smoke-wisp"></div></div>
+            <div class="candle-body" style="background: linear-gradient(to right, #FF6EB4, #C2185B, #FF6EB4);"></div>
+          </div>
+        </div>
+        <div class="cake-top">
+          <div class="cherry"></div>
+          <span class="cake-text">Happy</span>
+          <div class="sprinkles top-sprinkles"></div>
+        </div>
+        <div class="cake-middle">
+          <span class="cake-text">Birthday</span>
+          <div class="sprinkles mid-sprinkles"></div>
+        </div>
+        <div class="cake-bottom">
+          <span class="cake-text cake-text-big">Babygirl</span>
+          <div class="hearts-deco">
+            <span>♥</span><span>♥</span><span>♥</span><span>♥</span><span>♥</span>
+          </div>
+        </div>
+        <div class="cake-plate"></div>
+      </div>
+    </div>
+    <p class="instruction" id="candle-instruction">Now blow into your mic to blow out the candles! 🎤</p>
+    <div class="blow-indicator" id="blow-indicator">
+      <div class="blow-bar" id="blow-bar"></div>
+    </div>
+    <p class="blow-hint" id="blow-hint"></p>
+
+    <div id="post-blow" class="hidden">
+      <canvas id="celebration-canvas"></canvas>
+      <p class="celebration-text" id="celebration-text"></p>
+      <p class="post-blow-message">
+        We wish you a very, very, very happiest 18th birthday! Honestly, we are surprised that you're 18, but we are proud that you're 18. We are glad that you made it. 🤪
+      </p>
+      <button id="to-slideshow" class="white-btn">Okay, let's see what else we have for you →</button>
+    </div>
+  </section>
+
+  <!-- SCENE 2: PHOTO SLIDESHOW -->
+  <section id="slideshow-section">
+    <div class="slideshow-container">
+      <div class="slide-doodles">
+        <span class="doodle doodle-star">✦</span>
+        <span class="doodle doodle-heart">♥</span>
+        <span class="doodle doodle-sparkle">✧</span>
+        <span class="doodle doodle-swirl">〰</span>
+        <span class="doodle doodle-star2">✦</span>
+        <span class="doodle doodle-heart2">♥</span>
+      </div>
+      <div class="slide-frame">
+        <img id="slide-img" src="" alt="">
+        <button class="slide-nav slide-prev" id="slide-prev">‹</button>
+        <button class="slide-nav slide-next" id="slide-next">›</button>
+      </div>
+      <p class="slide-caption" id="slide-caption"></p>
+      <div class="slide-counter" id="slide-counter"></div>
+      <div class="slide-progress">
+        <div class="slide-progress-bar" id="slide-progress-bar"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCENE 3: MESSAGES FROM FRIENDS -->
+  <section id="notes-section">
+    <h2 class="section-title">A few words from people who love you</h2>
+    <div class="notes-grid">
+
+      <!-- MESSAGE 1: Text + Audio -->
+      <div class="note-card">
+        <p class="note-text">here's a bonus abhiraj bhai </p>
+        <audio class="note-audio" controls src="messages/person1.ogg"></audio>
+        <span class="note-author"> -jalebi fefda </span>
+      </div>
+
+
+    </div>
+    <div id="to-finale" class="next-arrow-wrap slideshow-next-arrow">
+      <span class="next-arrow-text">One last thing...</span>
+      <span class="next-arrow">→</span>
+    </div>
+  </section>
+
+  <!-- FINAL SCREEN: QR + FAREWELL -->
+  <section id="finale-section">
+    <h2 class="section-title finale-title">We hope you liked this little surprise 🖕❤️</h2>
+    <p class="finale-caption" id="finale-caption">We made something special for you — scan to watch!</p>
+    <div class="qr-container">
+      <canvas id="qr-canvas"></canvas>
+    </div>
+    <p class="finale-hint">Tap the QR if you can't scan it</p>
+    <p class="footer-text finale-footer">Happy 18th Birthday, with all our love 🖕❤️😘</p>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
